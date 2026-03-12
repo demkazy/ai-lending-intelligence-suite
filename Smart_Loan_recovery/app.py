@@ -1,4 +1,5 @@
 import streamlit as st
+from pathlib import Path
 import pandas as pd
 import joblib
 import plotly.express as px
@@ -11,9 +12,11 @@ st.set_page_config(page_title="FinRecover AI", page_icon="💳", layout="wide")
 
 login()
 
-model = joblib.load("Smart_loan_recovery/recovery_model.joblib")
-label_encoder = joblib.load("recovery_label_encoder.joblib")
-df = pd.read_csv("Smart Loan Recovery System.csv")
+BASE_DIR = Path(__file__).resolve().parent
+
+model = joblib.load(BASE_DIR / "recovery_model.joblib")
+label_encoder = joblib.load(BASE_DIR / "recovery_label_encoder.joblib")
+df = pd.read_csv(BASE_DIR / "Smart Loan Recovery System.csv")
 
 st.markdown("""
 <style>
