@@ -35,7 +35,7 @@ st.markdown('<div class="sub-text">Predict loan approval using a Random Forest m
 
 @st.cache_resource
 def load_model():
-    return joblib.load("loan_model.joblib")
+    return joblib.load("loan_approval_app/loan_model.joblib")
 
 model = load_model()
 
