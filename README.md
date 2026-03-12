@@ -11,3 +11,10 @@ Predicts whether a loan application should be approved based on applicant financ
 Recommends optimal recovery strategies for delinquent or defaulted loans.
 
 Built with Python, Scikit-learn, and Streamlit, the platform demonstrates practical machine learning applications in fintech risk management and credit decision systems.
+Live Applications
+
+Loan Approval AI
+https://ademola-loan-approval-ai.streamlit.app
+
+FinRecover AI
+https://loan-recovery-ai.streamlit.app
