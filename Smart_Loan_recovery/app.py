@@ -11,7 +11,7 @@ st.set_page_config(page_title="FinRecover AI", page_icon="💳", layout="wide")
 
 login()
 
-model = joblib.load("recovery_model.joblib")
+model = joblib.load("Smart_loan_recovery/recovery_model.joblib")
 label_encoder = joblib.load("recovery_label_encoder.joblib")
 df = pd.read_csv("Smart Loan Recovery System.csv")
 
